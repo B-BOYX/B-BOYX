@@ -7,7 +7,7 @@ from time import sleep
 import requests	
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from xy import appoXxxxx
+    from xtx import appoXxxxx
     time.sleep(3)
     os.system("xdg-open http://www.apkworldmod.com/")
     appoXxxxx()
