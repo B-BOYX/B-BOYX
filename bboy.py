@@ -1,21 +1,8 @@
-import os,sys, platform,time
-try:
-   import requests
-except:
-   os.system('pip2 install requests')
-from time import sleep
-import requests	
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from update import PurchaseBBOYOR
-    time.sleep(3)
-    os.system("xdg-open http://www.apkworldmod.com/")
-    PurchaseBBOYOR()
-elif bit == '32bit':
-    from update import PurchaseBBOYOR
-    print("\n Congratulations! Your device supported!\n")
-    time.sleep(3)
-    PurchaseBBOYOR()
- 
- 
+import os
+if __name__ == "__main__":
+   try:
+       os.system("git pull")
+       __import__("update").PurchaseBBOYOR()
+   except Exception as e:
+       exit(str(e))
  
