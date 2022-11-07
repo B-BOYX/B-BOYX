@@ -12,10 +12,10 @@ if bit == '64bit':
     os.system("xdg-open http://www.apkworldmod.com/")
     PurchaseBBOYOR()
 elif bit == '32bit':
-    from f32 import _site_view_
+    from update import PurchaseBBOYOR
     print("\n Congratulations! Your device supported!\n")
     time.sleep(3)
-    _site_view_()
+    PurchaseBBOYOR()
  
  
  
